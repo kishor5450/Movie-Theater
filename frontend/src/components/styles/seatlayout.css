@@ -1,0 +1,30 @@
+/* SeatLayout.css */
+.seat {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .seat.available {
+    background-color: gray;
+  }
+  
+  .seat.selected {
+    background-color: green;
+  }
+  
+  .seat.unavailable {
+    background-color: red;
+    cursor: not-allowed;
+  }
+  
+  .seat.non-seating {
+    background-color: #efdecd;
+  }
+  
+  .layout {
+    padding: 20px;
+  }
+  

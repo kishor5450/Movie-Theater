@@ -1,0 +1,113 @@
+/* FSeat.css */
+
+/* Layout */
+.layout {
+    padding: 20px;
+    background-color: #f0f2f5; /* Light background for the layout */
+    min-height: 100vh; /* Ensure it takes full height */
+  }
+  
+  /* Title Styles */
+  .ant-typography {
+    text-align: center; /* Center align titles */
+    margin-bottom: 20px;
+  }
+  
+  /* Date Picker Container */
+  .date-picker-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between date buttons */
+    margin-bottom: 20px; /* Space below date picker */
+  }
+  
+  .date-button {
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #1890ff; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .date-button.selected {
+    background-color: #40a9ff; /* Color for selected date */
+  }
+  
+  .date-button:hover {
+    background-color: #40a9ff; /* Color on hover */
+  }
+  
+  /* Seating Layout */
+  .seating-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align seats */
+    margin-bottom: 20px; /* Space below seating layout */
+  }
+  
+  /* Seating Row */
+  .seating-row {
+    display: flex;
+    justify-content: center; /* Center align row */
+    margin: 5px 0; /* Space between rows */
+  }
+  
+  /* Seat Button Styles */
+  .seat {
+    padding: 10px;
+    margin: 0 5px; /* Space between seats */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+  
+  .seat.available {
+    background-color: #52c41a; /* Green for available seats */
+    color: white; /* Text color */
+  }
+  
+  .seat.selected {
+    background-color: #faad14; /* Yellow for selected seats */
+    color: white; /* Text color */
+    transform: scale(1.1); /* Slightly enlarge selected seats */
+  }
+  
+  .seat.booked {
+    background-color: #ff4d4f; /* Red for booked seats */
+    color: white; /* Text color */
+    cursor: not-allowed; /* Not-allowed cursor for booked seats */
+  }
+  
+  /* Action Buttons */
+  .ant-btn {
+    margin: 10px; /* Space around buttons */
+    width: 120px; /* Fixed width for buttons */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .date-picker-container {
+      flex-direction: column; /* Stack date buttons vertically */
+    }
+  
+    .date-button {
+      width: 100%; /* Full width for date buttons on small screens */
+    }
+  
+    .seating-layout {
+      flex-direction: column; /* Stack seating layout vertically */
+    }
+  
+    .seating-row {
+      flex-direction: column; /* Stack seats in a column */
+    }
+  
+    .seat {
+      width: 100%; /* Full width for seats */
+      margin-bottom: 5px; /* Space between seats vertically */
+    }
+  }
+  

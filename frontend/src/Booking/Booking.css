@@ -1,0 +1,191 @@
+/* Main container for the ticket */
+
+
+
+
+.ticket-main {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    max-width: 430px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ded6d6;
+    position: relative;
+    overflow: hidden;
+    /* To avoid overflow issues */
+  }
+  
+  /* Ticket confirmation header */
+  .booking-confirmation-header {
+    display: flex;
+    content: "✔";
+    justify-content: center;
+    align-items: center;
+    background-color: #00c853; /* Paytm green */
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .booking-confirmation-header h1 {
+    font-size: 20px;
+    color: #e42e2e;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  
+  .booking-confirmation-header h1::before {
+    content: "✔";
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  
+  /* Ticket section with details */
+  .ticket-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px dashed #ccc;
+  }
+  
+  .ticket-section .tickets {
+    flex: 1;
+  }
+
+  
+  
+  .tickets h2 {
+    font-size: 29px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: -20px;
+    font-weight: 600;
+    
+    
+    
+  }
+  
+  .tickets p {
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0;
+    
+  }
+  
+  .tickets .bold {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  /* Movie Poster */
+  .ticket-image {
+    flex: 0 0 180px;
+    padding-left: 15px;
+    
+  }
+  .tickets{
+    margin-top: 20px;
+    margin-left: 90px;
+    
+  }
+  .ticket-image img {
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    
+  }
+  
+  /* QR code */
+  .qrcode {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    border-top: 1px dashed #ccc;
+  }
+  
+  .qrcode svg {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Screen and Seat Info */
+  .ticket-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .ticket-info .info-text {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .ticket-info .screen-seats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .screen-seats span {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .screen-seats .bold {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  /* Booking ID and Footer */
+  .ticket-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+  }
+  
+  .ticket-footer span {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Improve button styles for actions */
+  .dialog-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dialog-actions button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .dialog-actions button:hover {
+    background-color: #0056b3;
+  }
+  .movie-man{
+    
+  }

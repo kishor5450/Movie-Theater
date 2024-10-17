@@ -1,0 +1,302 @@
+/* .seating-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.seating-row {
+  display: flex;
+  margin: 5px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.selected {
+  background-color: #4caf50 !important; 
+}
+
+.non-seating {
+  background-color: #f44336 !important; 
+  cursor: not-allowed;
+}
+
+
+.date-picker-container {
+  display: flex; 
+  align-items: center; 
+  overflow-x: auto; 
+  width: 100%; 
+  margin-bottom: 16px;
+}
+
+.date-picker {
+  display: flex; 
+  gap: 8px; 
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.date-button {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white; 
+  text-align: center;
+}
+
+.date-button.selected { 
+  background-color: #f00; 
+  color: white;
+}
+
+.date-button.today {
+  font-weight: bold; 
+}
+
+.date-button .day {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.date-button .month {
+  font-size: 0.8rem;
+} */
+
+
+
+/* Style for available seats */
+/* .seat {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc; 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+}
+
+.seat.selected {
+  background-color: #1890ff; 
+  color: white; 
+}
+
+
+.seat.non-seating {
+  background-color: #2830cf; 
+  cursor: not-allowed;
+}
+
+
+.seat.booked {
+  background-color: red; 
+  cursor: not-allowed; 
+  opacity: 0.7;
+}
+
+
+
+
+.seating-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.seating-row {
+  display: flex;
+  margin: 5px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.selected {
+  background-color: #4caf50 !important;
+}
+
+.non-seating {
+  background-color: #252704 !important; 
+  cursor: not-allowed;
+}
+
+
+.date-picker-container {
+  display: flex; 
+  align-items: center; 
+  overflow-x: auto; 
+  width: 100%; 
+  margin-bottom: 16px;
+}
+
+.date-picker {
+  display: flex; 
+  gap: 8px; 
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.date-button {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white; 
+  text-align: center;
+}
+
+.date-button.selected { 
+  background-color: #f00; 
+  color: white;
+}
+
+.date-button.today {
+  font-weight: bold; 
+}
+
+.date-button .day {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.date-button .month {
+  font-size: 0.8rem;
+} */
+.seat {
+  margin: 5px;
+  padding: 10px;
+  background-color: white; /* Light gray background for available seats */
+  border: 1px solid hsl(0, 6%, 84%); /* Light border */
+  cursor: pointer; /* Pointer cursor for available seats */
+  transition: background-color 0.3s;
+}
+
+/* Style for selected seats */
+.seat.selected {
+  background-color: #0c4b0b; /* Blue background for selected seats */
+  color: white; /* White text for selected seats */
+}
+
+/* Style for non-seating areas */
+.seat.non-seating {
+  background-color: #111217; /* Color for non-seating spaces */
+  cursor: not-allowed; /* Not allowed cursor for non-seating spaces */
+}
+
+/* Style for booked seats */
+.seat.booked {
+  background-color: red; /* Red background for booked seats */
+  cursor: not-allowed; /* Not allowed cursor for booked seats */
+  opacity: 0.7; /* Slightly transparent to indicate unavailability */
+}
+
+.seating-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.seating-row {
+  display: flex;
+  margin: 5px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* Additional styles for date picker and buttons */
+/* .date-picker-container {
+  display: flex; 
+  align-items: center; 
+  overflow-x: auto; 
+  width: 100%; 
+  margin-bottom: 16px;
+}
+
+.date-button {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white; 
+  text-align: center;
+}
+
+.date-button.selected { 
+  background-color: #f00; 
+  color: white;
+}
+
+.date-button.today {
+  font-weight: bold; 
+}
+
+.date-button .day {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.date-button .month {
+  font-size: 0.8rem;
+} */
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%; /* Adjust as needed */
+  margin-bottom: 16px;
+}
+
+.date-button {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white; /* White background */
+  text-align: center;
+}
+
+.date-button.selected { /* Style for selected date */
+  background-color: #f00; /* Red background */
+  color: white;
+}
+
+.date-button.today { /* Style for today's date */
+  font-weight: bold; /* Bold font */
+}
+
+.date-button .day {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.date-button .month {
+  font-size: 0.8rem;
+}
+
+
