@@ -1012,6 +1012,11 @@ import { Link } from "react-router-dom";
 import { Carousel } from "antd";
 import FetchedSeatLayout from "../layout-components/FetchedSeatLayout"; 
 import ShowsButtons from "../Shows/ShowsButtons"; 
+import VideoCarousel from "../TRAILERS/VideoCarousel";
+
+
+
+// import MoviePage from "../TRAILERS/Trailers";
 
 interface Movie {
   id: number;
@@ -1147,9 +1152,21 @@ const HomePage: React.FC = () => {
               style={{ width: "100%", height: "300px", objectFit: "cover" }}
             />
           </div>
-        
+               
         </Carousel>
+        
+
       </Box>
+     
+
+
+
+
+
+
+
+
+
 
       <Box padding={2} margin={"auto"}>
         <Typography variant="h5" textAlign={"center"}>
@@ -1228,7 +1245,9 @@ const HomePage: React.FC = () => {
       </Dialog>
 
       
-      <Dialog open={seatLayoutDialogOpen} onClose={handleCloseSeatLayoutDialog}>
+      <Dialog open={seatLayoutDialogOpen} onClose={handleCloseSeatLayoutDialog} fullWidth  
+            maxWidth={false} // This ensures the dialog spans the full width of the screen
+            sx={{ height: '750px',bgcolor: 'white', }} >
         <DialogTitle>Select seats</DialogTitle>
         <DialogContent>
           {selectedTheaterId && selectedMovieId && selectedShow && selectedTheaterName && selectedMovieName && (

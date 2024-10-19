@@ -185,15 +185,15 @@
 .seat {
   margin: 5px;
   padding: 10px;
-  background-color: white; /* Light gray background for available seats */
-  border: 1px solid hsl(0, 6%, 84%); /* Light border */
+  background-color: #FFFFFF; /* Light gray background for available seats */
+  border: 1px solid #1EA83C; /* Light border */
   cursor: pointer; /* Pointer cursor for available seats */
   transition: background-color 0.3s;
 }
 
 /* Style for selected seats */
 .seat.selected {
-  background-color: #0c4b0b; /* Blue background for selected seats */
+  background-color: #1EA83C; /* Blue background for selected seats */
   color: white; /* White text for selected seats */
 }
 
@@ -205,28 +205,40 @@
 
 /* Style for booked seats */
 .seat.booked {
-  background-color: red; /* Red background for booked seats */
+  background-color: #EEEEEE; /* Red background for booked seats */
   cursor: not-allowed; /* Not allowed cursor for booked seats */
-  opacity: 0.7; /* Slightly transparent to indicate unavailability */
+  opacity: 1.16;
+  border-color: #EEEEEE;
+  color:#FFFFFF; /* Slightly transparent to indicate unavailability */
 }
 
 .seating-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
+  margin-top: 50px;
+
+ 
+  
 }
 
 .seating-row {
   display: flex;
   margin: 5px 0;
+  padding-bottom: -100px;
 }
 
 .seat {
-  width: 40px;
-  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
   margin: 5px;
-  font-size: 16px;
+  font-size: 11px;
+  margin-bottom: -5px;
+  color: #18a015c8;
+  border-radius: 2px;
 }
 
 /* Additional styles for date picker and buttons */
@@ -270,13 +282,15 @@
   overflow-x: auto;
   width: 100%; /* Adjust as needed */
   margin-bottom: 16px;
+  background-color: rgb(237, 242, 242);
 }
 
 .date-button {
   border: 1px solid #ccc;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 5px;
   background-color: white; /* White background */
   text-align: center;
 }
@@ -298,5 +312,69 @@
 .date-button .month {
   font-size: 0.8rem;
 }
+.seat.non-seating{
+  /* display: none; */
+  background-color: transparent;
+  color: transparent;
+  border: none;
+}
+.final-button{
+  display: flex;
+  color: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.final-button Button{
+  background-color: red;
+}
+
+.platform {
+  width: 300px;
+  height: 10px;
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 5px;
+  box-shadow: 
+    0 5px 15px rgba(0, 0, 255, 0.2), /* Larger shadow with blue tint */
+    0 2px 10px rgba(0, 0, 255, 0.1), /* Smaller shadow for extra depth */
+    0 5px 5px rgba(0, 0, 255, 0.05); /* Bottom shadow to enhance 3D effect */
+  margin: 88px auto;
+  margin-bottom:25px;
+  
+}
+
+.text {
+  font: 12px roboto;
+  color: #141313;
+  opacity: 12.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  
 
 
+}
+
+
+
+.price{
+  color: #999999;
+  width: 626px;
+  height: 25.41px;
+  margin: 0px 0px 5px ;
+  padding: 0px 0px 10px;
+  opacity: 1.72;
+  font: 9px ;
+  font-family: sans-serif;
+  margin-left: 100px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  margin-top: 28px;
+
+  
+ 
+  
+}

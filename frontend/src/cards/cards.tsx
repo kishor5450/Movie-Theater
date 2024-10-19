@@ -217,14 +217,14 @@ const Cards: React.FC<CardsProps> = ({
       sx={{
         margin: 5,
         width: 250,
-        height: 380,
+        height: 450, //380
         borderRadius: 5,
         ":hover": {
           boxShadow: "10px 10px 20px #ccc",
         },
       }}
     >
-      <img height={"55%"} width={"100%"} src={poster_url} alt={name} />
+      <img height={"60%"} width={"100%"} src={poster_url} alt={name} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {name}

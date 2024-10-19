@@ -120,12 +120,15 @@ interface Ticket {
   selectedDate: string;
   seats: string[];
   qrCodeData: string;
+  orderId:string;
 }
 
 
 interface BookingConfirmationProps {
   ticket: Ticket | null; 
-  onClose: () => void;   
+  onClose: () => void;
+  
+
 }
 
 
@@ -206,6 +209,7 @@ const BookingConfirmation: React.FC<BookingConfirmationProps> = ({ ticket, onClo
               <QRCodeSVG value={ticket.qrCodeData} size={128} />
             </div>
             <h6>Ticket(s)</h6>
+            <p>order_id:{ticket.orderId}</p>
             <div className="cancel">
             <h5>Cancellation not availble for this  venue</h5>
             </div>
